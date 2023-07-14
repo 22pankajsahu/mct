@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+/* header */
+.header {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../image/herobg.jpg');
+    box-shadow: inset 0 0 100px 5px rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    padding: 15px 3%;
+    position: relative;
+}
+.header-logo {
+    width: 120px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.language {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.1em;
+}
+.globe {
+    position: relative;
+    left: 1.4em;
+    width: 17px;
+}
+.drop-ico {
+    position: relative;
+    left: -1.4em;
+    width: 10px;
+}
+select {
+    -webkit-appearance: none;
+    background-color: rgb(20, 18, 20);
+    border: 2px solid white;
+    color: white;
+    padding: .3em 2.1em;
+    border-radius: 2px;
+}
+select option {
+    background: white;
+}
+nav a {
+    font-weight: 500;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #E50914;
+    border-radius: 2px;
+    padding: .3em 1em;
+}
+nav a:hover {
+    background-color: #c02129;
+}
+.header-container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.header-container h1 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    max-width: 650px;
+    margin-bottom: 11px;
+}
+.header-container h3 {
+    font-size: 17px;
+    max-width: none;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.form_container {
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.form_container:focus {
+    outline-color: white;
+}
+.form_container input {
+    background: #1C1414;
+    flex: 1;
+    border: 0;
+    outline-color: white;
+    height: 55px;
+    margin: 0;
+    margin-left: 10px;
+}
+.form_container .floating-label {
+    color: #8c8c8c;
+    font-size: 16px;
+    position: absolute;
+    top: 85%;
+    left: 30px;
+    cursor: text;
+    transform: translateY(-50%);
+    transition: font .1s ease, top .1s ease, transform .1s ease;
+}
+.form_container button {
+    background-color: #E50914;
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.form_container button:hover {
+    background-color: #c02129;
+}
+.form_container input:focus~.floating-label,
+.form_container input:valid~.floating-label {
+    font-size: 11px;
+    top: 85%;
+}
+/* main */
+/* section break */
+.section_break {
+    width: 100%;
+    height: 10px;
+    border-bottom: 8px solid #222;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 1%;
+    overflow: hidden;
+    min-width: 395px;
+}
+.text {
+    margin-top: 7%;
+}
+.text h1 {
+    font-size: 3rem;
+}
+.text h2 {
+    margin-top: 3%;
+    font-size: 1.50rem;
+    font-weight: 400;
+}
+.col img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+.img-vid-container {
+    width: 400px;
+    margin: auto;
+    position: relative;
+}
+.col video {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 73%;
+    top: 20.6%;
+    left: 13%;
+}
+.blank-div {
+    height: 300px;
+}
+.mobile_downloading {
+    border: 2px solid #222;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile_image {
+    width: 20%;
+    padding: 10px;
+}
+
+.mobile_text {
+    margin-left: 1em;
+}
+
+.mobile_text h2 {
+    font-size: 1.2em;
+}
+
+.mobile_text p {
+    color: blue;
+}
+
+.mobile_gif {
+    width: 15%;
+    margin-left: 4em;
+}
+
+.mobile_image img {
+    position: static;
+}
+
+.mobile_gif img {
+    position: static;
+}
+
+.v3 video {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 63%;
+    top: 10%;
+    left: 18%;
+}
+
+.faq_container_main {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq_container_main h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.faq_container_child {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.faq_container_child li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.faq_container_child li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq_title::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.faq_container_child .faq_content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq_container_child input[type="radio"]:checked + label + .faq_content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq_container_child input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq_container_main small {
+    font-size: 13px;
+}
+.faq_container_main .form_container {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #B3B3A8;
+}
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.footer .col a {
+    display: block;
+    color: #B3B3A8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .footer_row {
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #B3B3A8;
+}
+
+/* responsive */
+@media only screen and (max-width:600px) {
+    .header-logo {
+        width: 100px;
+    }
+
+    .language {
+        margin-right: 0.1em;
+    }
+
+    .globe {
+        left: 1em;
+        width: 10px;
+    }
+
+    .drop-ico {
+        left: -1em;
+        width: 7px;
+    }
+
+    select {
+        font-size: 12px;
+        padding: .5em 1.6em;
+    }
+
+    nav a {
+        padding: .55em 1.2em;
+        font-size: 12px;
+    }
+
+    .header-container h1 {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .header-container h3 {
+        font-size: 1rem;
+    }
+
+    .form_container .floating-label {
+        font-size: 13px;
+        top: 90%;
+    }
+
+    .form_container button {
+        width: 100px;
+        font-size: 12px;
+        padding: 1.0287em 0px;
+    }
+
+    .form_container input:focus~.floating-label,
+    .form_container input:valid~.floating-label {
+        font-size: 8px;
+        top: 88%;
+    }
+
+    .text h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 15em;
+    }
+
+    .text h2 {
+        font-size: 1rem;
+        max-width: 15em;
+        text-align: center;
+        margin-left: 15%;
+    }
+
+    .img-vid-container {
+        width: 300px;
+        margin-left: 5%;
+    }
+
+    .col video {
+        top: 15%;
+    }
+
+    .box img {
+        margin-left: 0;
+    }
+
+    .mobile_downloading {
+        margin-top: -70px;
+        margin-left: 0;
+    }
+
+    .mobile_text h2 {
+        font-size: .7em;
+    }
+
+    .mobile_text p {
+        font-size: .7em;
+    }
+
+    .v3 video {
+        top: 7%;
+    }
+    .faq_container_main h2 {
+        font-size: 20px;
+    }
+
+    .faq_container_child .faq_content {
+        font-size: 13px;
+    }
+
+    .faq_container_child li label {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    label::after {
+        font-size: 20px;
+    }
+}
