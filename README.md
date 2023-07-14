@@ -38,7 +38,7 @@ Netflix is a streaming service that offers a wide variety of award-winning TV sh
 </div> <br>
 <div id="demo" align="center"> <hr>
 
-## Watch the Live  [Demo](https://22pankajsahu.github.io/mct/) 
+## Watch the Live  [Demo](https://netflix-clone-mct.netlify.app/) 
 
 Click on the **Demo** text which is above to live view of this website.
 
